@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica, dentre 5 números, qual possui o maior valor</title>
+</head>
+
+<body>
+    <script>
+        var n1, n2, n3, n4, n5;
+        n1 = parseFloat(prompt("Digite o primeiro valor:"));
+        n2 = parseFloat(prompt("Digite o segundo valor:"));
+        n3 = parseFloat(prompt("Digite o terceiro valor:"));
+        n4 = parseFloat(prompt("Digite o quarto valor:"));
+        n5 = parseFloat(prompt("Digite o quinto valor:"));
+
+        if (n1 >= n2 && n1 >= n3 && n1 >= n4 && n1 >= n5) {
+            document.write("<br> O maior valor é o " + n1);
+        } else {
+            if (n2 >= n1 && n2 >= n3 && n2 >= n4 && n2 >= n5) {
+                document.write("<br> O maior valor é o " + n2);
+            } else {
+                if (n3 >= n1 && n3 >= n2 && n3 >= n4 && n3 >= n5) {
+                    document.write("<br> O maior valor é o " + n3);
+                } else {
+                    if (n4 >= n1 && n4 >= n3 && n4 >= n2 && n4 >= n5) {
+                        document.write("<br> O maior valor é o " + n4);
+                    } else {
+                        document.write("<br> O maior valor é o " + n5);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
