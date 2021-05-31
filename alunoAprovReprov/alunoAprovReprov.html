@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média do aluno e indicar se ele está aprovado ou reprovado</title>
+    <style>
+        #ap {
+            color: green;
+        }
+
+        #rep {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var n1, n2, n3, n4;
+        n1 = parseFloat(prompt("Nota 1: ")); //parseFloat é utilizado para conversão de valores à decimais
+        n2 = parseFloat(prompt("Nota 2: "));
+        n3 = parseFloat(prompt("Nota 3: "));
+        n4 = parseFloat(prompt("Nota 4: "));
+        var media = ((n1 + n2 + n3 + n4) / 4);
+        alert("Para ser aprovado, a média do aluno precisa ser >= 5. \nA média deste aluno foi: " + media);
+        if (media >= 5) {
+            document.write("<p id='ap'>Por tanto, o aluno foi aprovado!</p>"); //insere uma informação na página
+        } else {
+            document.write("<p id='rep'>Por tanto, o aluno não foi aprovado. </p>")
+        }
+    </script>
+</body>
+
+</html>
